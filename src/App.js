@@ -1,39 +1,61 @@
-import logo from './logo.svg';
-import './App.css';
-// import saludar from './Utils.js'
-// import { saludar } from './Utils.js'
-// import { saludar, chau } from './Utils.js'
+import { Noticias } from './components/Noticias'
+import { Tutores } from './components/Tutores'
+import { Tutor } from "./components/Tutor";
+import './App.css'
+import { ContenedorTurquesa } from './components/ContenedorTurquesa';
+import { Boton } from './components/Boton'
 
 function App() {
 
-  // saludar()
-  // chau()
-
-  const prof = "Mauro Paul"
-
-  // const mensaje = `El profesor es ${prof}`
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          {/* Alumna: Andrea Berardi (the best) */}
-          {/* {prof} */}
-          {/* {mensaje} */}
-          El profesor es {prof}
-        </p>
-        <h2>Coderhouse inc.</h2>
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Aprendamos React
-        </a> */}
-      </header>
+    <div>
 
+      {/* <NavBar />
+      <ItemListContainer greeting="Hola mundo" /> */}
+
+
+      <hr />
+
+      <h2>Coder 51155</h2>
+
+
+      <Noticias>
+        <h4>Noticias</h4>
+      </Noticias>
+
+      <Tutores />
+
+      <ContenedorTurquesa>
+        <h2>Título</h2>
+        <p>Blablabla jjbjhj</p>
+        <small>Un tetxto chiquito</small>
+
+        <section>
+          <h4>Otro título más chiquito</h4>
+          <p>Otro texto</p>
+        </section>
+
+      </ContenedorTurquesa>
+
+      <Boton>
+        Click me
+
+      </Boton>
+
+
+      <Tutor
+        comision={51155}
+        nombre="Fede Blautzik"
+        curso="ReactJS"
+        edad={28}
+      />
+
+      <Tutor
+        comision={42355}
+        nombre="Julián Debranbandere"
+        curso="JavaScript"
+        edad={19}
+      />
 
     </div>
   );
