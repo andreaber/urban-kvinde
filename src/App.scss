@@ -1,0 +1,12 @@
+.App {
+    font-family: 'Urbanist', sans-serif;
+    background: rgb(189,249,249);
+    background: linear-gradient(
+        180deg, 
+        rgb(209, 238, 238) 15%, 
+        rgb(156, 209, 209) 30%, 
+        rgb(75, 173, 173) 45%, 
+        rgba(0,139,139,1) 65%, 
+        rgba(3,88,88,1) 100%
+    ); 
+}
